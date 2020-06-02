@@ -146,6 +146,7 @@
   grid-template-columns: repeat(2, minmax(-webkit-max-content, 0));
   grid-template-columns: repeat(2, minmax(max-content, 0));
   grid-gap: 20px;
+  text-decoration: none;
 }
 .hero {
   padding: 120px 0;
@@ -309,4 +310,19 @@ textarea:focus {
 .contactsblock__list li a {
   text-decoration: none;
   color: #f46524;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+form input {
+  margin-top: 20px;
+}
+label.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 10px;
+}
+input.error {
+  border-color: red;
 }

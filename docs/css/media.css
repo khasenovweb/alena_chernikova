@@ -1,0 +1,24 @@
+@media screen and (max-width: 670px) {
+  .hero__title {
+    font-size: 40px;
+  }
+  .hero {
+    padding: 60px 0;
+  }
+  .head__btns {
+    display: none;
+  }
+  .section__title {
+    font-size: 30px;
+  }
+  .spicker__content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .spicker__content__text {
+    margin-top: 40px;
+  }
+  .head__logo img {
+    max-width: 200px;
+  }
+}
