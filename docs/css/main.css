@@ -192,6 +192,7 @@
   position: relative;
   padding-left: 20px;
   margin-bottom: 20px;
+  font-size: 20px;
 }
 .hero__item__list li:before {
   content: "";
@@ -211,6 +212,9 @@
 .section__title {
   font-weight: bold;
   font-size: 40px;
+}
+.section__title span {
+  color: #f46524;
 }
 input,
 textarea {
@@ -248,5 +252,61 @@ textarea:focus {
   color: white;
 }
 .footer a {
+  color: #f46524;
+}
+.hero__title {
+  width: 80%;
+}
+.hero__desc {
+  margin-top: 40px;
+  font-size: 25px;
+  width: 70%;
+}
+.hero__desc span {
+  color: #f46524;
+}
+.hero__btn {
+  margin-top: 50px;
+}
+.vebinar__program {
+  padding: 60px 0;
+}
+.spicker {
+  padding: 60px 0;
+  background-color: #fcfcfc;
+}
+.spicker__content {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+}
+.spicker__img {
+  width: 300px;
+  height: 300px;
+  background-image: url(../img/spicker.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  margin-right: 60px;
+}
+.spicker__content__text__title {
+  font-size: 30px;
+  font-weight: bold;
+}
+.contactsblock {
+  background-color: white;
+  padding: 60px 0;
+}
+.contactsblock__list {
+  margin-top: 30px;
+}
+.contactsblock__list li {
+  display: flex;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.contactsblock__list li a {
+  text-decoration: none;
   color: #f46524;
 }

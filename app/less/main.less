@@ -26,7 +26,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
+}
 }
 .btn {
   border: 1px solid #f46524;
@@ -43,7 +43,7 @@
   &:hover {
     background: @main;
     color: white;
-  }
+}
 }
 
 .head__btns {
@@ -58,7 +58,7 @@
   overflow: hidden;
   * {
     position: relative;
-  }
+}
 }
 .hero__img {
   position: absolute;
@@ -72,7 +72,7 @@
   font-size: 60px;
   span {
     color: @main;
-  }
+}
 }
 .hero__items {
   margin-top: 90px;
@@ -84,7 +84,7 @@
 .hero__item {
   .btn {
     margin-top: 40px;
-  }
+}
 }
 .hero__item__title {
   font-weight: bold;
@@ -98,6 +98,7 @@
     position: relative;
     padding-left: 20px;
     margin-bottom: 20px;
+    font-size: 20px;
     &:before {
       content: "";
       display: block;
@@ -108,8 +109,8 @@
       left: 0;
       top: 5px;
       border-radius: 100%;
-    }
   }
+}
 }
 .contacts {
   padding: 60px 0;
@@ -118,6 +119,9 @@
 .section__title {
   font-weight: bold;
   font-size: 40px;
+  span {
+    color: @main;
+}
 }
 input,
 textarea {
@@ -127,15 +131,15 @@ textarea {
   border-radius: 5px;
   &:focus {
     border-color: @main;
-  }
+}
 }
 .contacts__form {
   margin-top: 40px;
   form {
     .btn {
       margin-top: 30px;
-    }
   }
+}
 }
 .input__group {
   display: grid;
@@ -151,11 +155,77 @@ textarea {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
-  * {
+}
+* {
     color: white;
-  }
-  a {
+}
+a {
     color: @main;
-  }
+}
+}
+
+.hero__title {
+  width: 80%;
+}
+.hero__desc {
+  margin-top: 40px;
+  font-size: 25px;
+  width: 70%;
+  span {
+    color: @main;
+}
+}
+
+.hero__btn {
+  margin-top: 50px;
+}
+
+.vebinar__program {
+  padding: 60px 0;
+}
+
+.spicker {
+    padding: 60px 0;
+    background-color: #fcfcfc;
+}
+
+.spicker__content {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.spicker__img {
+    width: 300px;
+    //padding-bottom: 100%;
+    height: 300px;
+    background-image: url(../img/spicker.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    margin-right: 60px;
+}
+
+.spicker__content__text__title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.contactsblock {
+    background-color: white;
+    padding: 60px 0;
+}
+
+.contactsblock__list {
+    margin-top: 30px;
+    li {
+        display: flex;
+        margin-bottom: 10px;
+        font-size: 20px;
+        a {
+            text-decoration: none;
+            color: @main;
+        }
+    }
 }
