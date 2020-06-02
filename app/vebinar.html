@@ -3,10 +3,12 @@
 
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width">
     <title>Алена Черникова</title>
     <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media.css" />
 </head>
 
 <body>
@@ -16,9 +18,9 @@
             <a href="" class="head__logo">
                 <img src="img/logo.svg" alt="" />
             </a>
-            <div class="head__btns">
+            <a class="head__btns" href="#form" data-role="scroll">
                 <button class="btn">Записаться сейчас</button>
-            </div>
+            </a>
         </div>
     </div>
     <!-- ==========================END head=============================================== -->
@@ -29,20 +31,20 @@
             <h1 class="hero__title"> Вебинар <span>"Как найти удаленную работу вашей мечты"</span>
             </h1>
             <div class="hero__desc">Зарегистрируйся на вебинар прямо сейчас, и получи <span>5 уникальных дизайнерских шаблонов</span> резюме для удаленной работы</div>
-            <button class="btn hero__btn">Записаться на вебинар</button>
+            <a href="#form" data-role="scroll">
+                <button class="btn hero__btn">Записаться на вебинар</button>
+            </a>
         </div>
     </div>
     <!-- ==========================END hero============================================-->
     <!-- ========================== contacts============================================-->
-    <div class="contacts">
+    <div class="contacts" id="form">
         <div class="container">
             <div class="section__title">Введите ваш <span>E-mail</span>, чтобы зарегистрироваться на вебинар </div>
             <div class="contacts__form">
-                <form action="https://pomoschnik.justclick.ru/subscribe/process" method="post">
-                    <div class="input__group">
-                        <input type="text" placeholder="Ваше имя" name="lead_name" />
-                        <input type="text" placeholder="Ваше E-mail" name="lead_email" />
-                    </div>
+                <form data-validate action="https://pomoschnik.justclick.ru/subscribe/process" method="post">
+                    <input type="text" placeholder="Ваше имя" name="lead_name" />
+                    <input type="text" placeholder="Ваше E-mail" name="lead_email" />
                     <input type="text" placeholder="Ваш номер телефона" name="lead_phone" />
                     <button class="btn">Записаться сейчас!</button>
                     <input type="hidden" name="rid[0]" value="1588267033.797698947">
@@ -98,17 +100,17 @@
                 </li>
                 <li>
                     <div class="contactsblock__list__label">Instagram:</div>
-                    <a href="tel:+79257339885" class="contactsblock__list__title">@online_curs</a>
+                    <a href="https://www.instagram.com/online.curs/" class="contactsblock__list__title">@online_curs</a>
                 </li>
                 <li>
                     <div class="contactsblock__list__label">E-mail:</div>
-                    <a href="tel:+79257339885" class="contactsblock__list__title">info@pomoschnik.info</a>
+                    <a href="mailto:info@pomoschnik.info" class="contactsblock__list__title">info@pomoschnik.info</a>
                 </li>
                 <li>
-                    <a href="tel:+79257339885" class="contactsblock__list__title">Телеграмм канал с вакансиями</a>
+                    <a href="https://t.me/pomoschnik_course" class="contactsblock__list__title">Телеграмм канал с вакансиями</a>
                 </li>
                 <li>
-                    <a href="tel:+79257339885" class="contactsblock__list__title">Читать статьи про удалёнку на Яндекс.Дзен</a>
+                    <a href="https://zen.yandex.ru/id/5e900f7a70a3c037671974ac" class="contactsblock__list__title">Читать статьи про удалёнку на Яндекс.Дзен</a>
                 </li>
             </ul>
         </div>
@@ -126,6 +128,9 @@
     <script src="js/jquery.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/mask.js"></script>
+    <script src="js/validate.js"></script>
     <script src="js/main.js"></script>
 </body>
 

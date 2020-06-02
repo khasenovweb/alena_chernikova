@@ -50,6 +50,7 @@
   display: grid;
   grid-template-columns: repeat(2, minmax(max-content, 0));
   grid-gap: 20px;
+  text-decoration: none;
 }
 
 .hero {
@@ -228,4 +229,20 @@ a {
             color: @main;
         }
     }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    input {
+        margin-top: 20px;
+    }
+}
+label.error {
+    color: red;
+    font-size: 12px;
+    margin-top: 10px;
+}
+input.error {
+    border-color: red;
 }
